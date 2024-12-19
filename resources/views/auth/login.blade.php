@@ -1,5 +1,15 @@
-@extends('template.landing')
-@section('content')
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Green Club</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
 
     <!-- Login Section -->
     <section class="vh-100 d-flex justify-content-center align-items-center">
@@ -49,8 +59,7 @@
 
                             <!-- Link ke Register -->
                             <div class="mt-4 text-center">
-                                <a  class="text-success" href="{{ route('home') }}">Lanjutkan tanpa akun</a>
-                                <p>Sudah punya akun? <a href="{{ route('showRegister') }}" class="text-success">Register</a></p>
+                                <p>Belum punya akun? <a href="/register" class="text-success">Daftar di sini</a></p>
                             </div>
                         </div>
                     </div>
@@ -58,4 +67,9 @@
             </div>
         </div>
     </section>
-@endsection
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
